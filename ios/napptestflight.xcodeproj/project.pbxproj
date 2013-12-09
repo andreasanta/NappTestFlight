@@ -30,6 +30,8 @@
 		6906769B15EC17D400C8BFD3 /* TestFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 6906769915EC17D400C8BFD3 /* TestFlight.h */; };
 		AA747D9F0F9514B9006C5449 /* DkNappTestflight_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* DkNappTestflight_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		F57180661855F4DB00DA7548 /* TestFlight+AsyncLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = F57180641855F4DB00DA7548 /* TestFlight+AsyncLogging.h */; };
+		F57180671855F4DB00DA7548 /* TestFlight+ManualSessions.h in Headers */ = {isa = PBXBuildFile; fileRef = F57180651855F4DB00DA7548 /* TestFlight+ManualSessions.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		AA747D9E0F9514B9006C5449 /* DkNappTestflight_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DkNappTestflight_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libDkNappTestflight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDkNappTestflight.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57180641855F4DB00DA7548 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		F57180651855F4DB00DA7548 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 		6906769515EC17D400C8BFD3 /* TestFlightSDK */ = {
 			isa = PBXGroup;
 			children = (
+				F57180641855F4DB00DA7548 /* TestFlight+AsyncLogging.h */,
+				F57180651855F4DB00DA7548 /* TestFlight+ManualSessions.h */,
 				6906769615EC17D400C8BFD3 /* libTestFlight.a */,
 				6906769915EC17D400C8BFD3 /* TestFlight.h */,
 			);
@@ -133,9 +139,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* DkNappTestflight_Prefix.pch in Headers */,
+				F57180671855F4DB00DA7548 /* TestFlight+ManualSessions.h in Headers */,
 				24DD6CF91134B3F500162E58 /* DkNappTestflightModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* DkNappTestflightModuleAssets.h in Headers */,
 				6906769B15EC17D400C8BFD3 /* TestFlight.h in Headers */,
+				F57180661855F4DB00DA7548 /* TestFlight+AsyncLogging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +172,8 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "napptestflight" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
