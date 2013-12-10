@@ -120,4 +120,11 @@
     TFLog(@"[INFO] TestFlight (%@)", msg);
 }
 
+//#define NSLog(__FORMAT__, ...) TFLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+-(void)feedback:(id)msg
+{
+    ENSURE_SINGLE_ARG(msg, NSString);
+    [TestFlight submitFeedback:msg];
+}
+
 @end
